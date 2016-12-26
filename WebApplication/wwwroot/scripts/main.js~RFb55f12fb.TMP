@@ -64,7 +64,7 @@
         },
 
         showResumeData: function () {
-            materialize.fadeInImage($('#resume-data img'));
+            materialize.fadeInImage($('#resume-data'));
         },
 
     }

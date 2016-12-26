@@ -7,68 +7,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The home page of my website" />
     <link rel="stylesheet" href="lib/materialize/dist/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
+    
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav class="light-blue darken-4">
-            <div class="nav-wrapper" id="menu">
-                <a href="#!" class="brand-logo">Logo</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="hover-effect right hide-on-med-and-down">
-                    <li class="menu-item active"><a href="#profile">Profile</a></li>
-                    <li class="menu-item"><a href="#work">Work</a></li>
-                    <li class="menu-item"><a href="#resume">Resume</a></li>
-                    <li class="menu-item"><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li class="menu-item"><a href="#profile">Profile</a></li>
-                    <li class="menu-item"><a href="#work">Work</a></li>
-                    <li class="menu-item"><a href="#resume">Resume</a></li>
-                    <li class="menu-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="blur-background">
-
-    </div>
-    <div class="container">
-        <div id="profile" class="row profile-page full-page">
-            <div class="col s6 hide-on-med-and-down">
-                <div class="hoverable">
-                    <img src="content/enhanced-car-me.jpg" class="responsive-img" />
+    <header>
+        <div class="navbar-fixed">
+            <nav class="light-pink darken-4">
+                <div class="nav-wrapper" id="menu">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="hover-effect right hide-on-med-and-down">
+                        <li class="menu-item active"><a href="#profile">Profile</a></li>
+                        <li class="menu-item"><a href="#work">Work</a></li>
+                        <li class="menu-item"><a href="#resume">Resume</a></li>
+                        <li class="menu-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li class="menu-item"><a href="#profile">Profile</a></li>
+                        <li class="menu-item"><a href="#work">Work</a></li>
+                        <li class="menu-item"><a href="#resume">Resume</a></li>
+                        <li class="menu-item"><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col s6 hide-on-med-and-down">Arun Thakur</div>
-
-            <div class="col s12 hide-on-med-and-up" >
-                <div class="hoverable">
-                    <img src="content/enhanced-car-me.jpg" class="responsive-img" />
-                </div>
-            </div>
+            </nav>
         </div>
-        <div id="work" class="row col s12 work-page full-page">Work Section</div>
-        <div id="resume" class="row col s12 resume-page full-page">Resume Section</div>
-        <div id="contact" class="row col s12 contact-page full-page">Contact Section</div>
-    </div>
-    <!--<footer class="page-footer">
+    </header>
+    <main>
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <div id="profile" class="row profile-page full-page">
+                <div class="col s6">
+                    <div>
+                        <h3>
+                            Who I am?
+                        </h3>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac sollicitudin ligula, sed facilisis tellus. Etiam dui orci, mattis quis dolor eget, efficitur consectetur tellus. Nam iaculis mollis elit, vel molestie lorem tempus vel. Sed sodales feugiat nibh non malesuada. Fusce pulvinar congue magna sed faucibus. Maecenas in interdum lorem. In aliquet suscipit justo eu rutrum. Sed ac tellus tempus, rhoncus dolor vel, ultricies velit. Nam tempus neque nec finibus ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <h3>
+                        &nbsp;
+                    </h3>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                    <blockquote>
+                        This is an example quotation that uses the blockquote tag.
+                    </blockquote>
+                </div>
+                <div class="col s12 l6 offset-l2">
+                    <div class="card-panel grey lighten-5 z-depth-1">
+                        <div class="row valign-wrapper">
+                            <div class="col s2">
+                                <img src="content/enhanced-car-me.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                            </div>
+                            <div class="col s10">
+                                <blockquote>
+                                    <span class="flow-text">
+                                        This is an example quotation that uses the blockquote tag.
+                                    </span>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="work" class="row col s12 work-page full-page">
+                <ul id="staggered-work-list" class="opaque-0" style="list-style:repeating-radial-gradient()">
+                    <li>
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Card Title</span>
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m6">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Card Title</span>
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row">
+                            <div class="col s6 m6">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Card Title</span>
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s6 m6">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Card Title</span>
+                                        <p>
+                                            I am a very simple card. I am good at containing small bits of information.
+                                            I am convenient because I require little markup to use effectively.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#">This is a link</a>
+                                        <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="resume" class="row col s12 resume-page full-page">
+                <div id="resume-data" class="opaque-0">
+                    <img src="content/what-i-know.png" />
+                </div>
+            </div>
+
+            <div id="contact" class="row col s12 contact-page full-page">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" class="validate">
+                                <label for="first_name">Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" class="validate">
+                                <label for="last_name">Contact</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">
+                            Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>-->
-
+    </main>
+   
     <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="lib/materialize/dist/js/materialize.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
